@@ -11,8 +11,8 @@ A minimal, luxurious, and heartfelt birthday celebration website created with lo
 
 ## 🚀 Live on GitHub Pages
 To publish this website live for free:
-1. Go to your repository on GitHub: `https://github.com/mightysubham2022-coder/birthday`
+1. Go to your repository on GitHub: `https://github.com/mightysubham2022-coder/birthday1`
 2. Click **Settings** > **Pages** (under Code and automation).
 3. Under **Branch**, select `main` and `/ (root)`, then click **Save**.
 4. Your website will be live in a couple of minutes at:
-   `https://mightysubham2022-coder.github.io/birthday/`
+   `https://mightysubham2022-coder.github.io/birthday1/`
