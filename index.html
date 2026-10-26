@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Didi! ✨🎂</title>
+  <meta name="description" content="A minimal and heartfelt birthday celebration website created with love for Didi.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Particles Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Minimal Floating Audio Control -->
+  <div class="top-controls">
+    <button id="music-btn" class="control-btn" title="Toggle Birthday Music" aria-label="Toggle Music">
+      <span class="icon" id="music-icon">🎵</span>
+      <span class="label">Play Music</span>
+    </button>
+  </div>
+
+  <main class="page-container">
+    
+    <!-- Hero / Grand Greeting Header -->
+    <header class="hero-section">
+      <div class="badge-wrapper">
+        <span class="sparkle-tag">✨ Queen of the Day ✨</span>
+      </div>
+      <h1 class="main-title">
+        <span class="title-sub">To the Best Sister in the World</span>
+        <span class="title-main">Happy Birthday, Didi!</span>
+      </h1>
+      <p class="hero-tagline">
+        Bringing endless sunshine, love, and sweet smiles into every single day 💕
+      </p>
+    </header>
+
+    <!-- Photo Memories Showcase (All 5 Photos in an Interactive Polaroid Album) -->
+    <section class="photo-showcase-section">
+      <div class="fairy-lights">
+        <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+        <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+        <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+      </div>
+
+      <div class="album-container">
+        <!-- Main Polaroid Card -->
+        <div class="polaroid-wrapper" id="polaroid-card">
+          <div class="polaroid-inner">
+            <div class="polaroid-pin">📍</div>
+            <div class="image-box">
+              <img id="active-photo" src="IMG_20261026_011158_033.jpg" alt="Photo of Didi" loading="eager">
+              <div class="photo-overlay-sparkle"></div>
+            </div>
+          </div>
+
+          <!-- Quick Navigation Arrows -->
+          <button class="album-nav-btn prev-btn" id="prev-photo-btn" aria-label="Previous Photo">❮</button>
+          <button class="album-nav-btn next-btn" id="next-photo-btn" aria-label="Next Photo">❯</button>
+        </div>
+
+        <!-- Thumbnail Selector -->
+        <div class="thumbnail-strip" id="thumbnail-strip">
+          <button class="thumb-item active" data-index="0" aria-label="View photo 1">
+            <img src="IMG_20261026_011158_033.jpg" alt="Thumbnail 1">
+          </button>
+          <button class="thumb-item" data-index="1" aria-label="View photo 2">
+            <img src="IMG-20251029-WA0043.jpg" alt="Thumbnail 2">
+          </button>
+          <button class="thumb-item" data-index="2" aria-label="View photo 3">
+            <img src="IMG_20251108_121100_113.jpg" alt="Thumbnail 3">
+          </button>
+          <button class="thumb-item" data-index="3" aria-label="View photo 4">
+            <img src="IMG_20260114_153032_658.jpg" alt="Thumbnail 4">
+          </button>
+          <button class="thumb-item" data-index="4" aria-label="View photo 5">
+            <img src="IMG_20260305_180756_899.jpg" alt="Thumbnail 5">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Birthday Cake & Make a Wish Section -->
+    <section class="interactive-section cake-section">
+      <div class="glass-card">
+        <div class="section-badge">Make a Wish 🌟</div>
+        <h2>Blow the Candles, Didi!</h2>
+        <p class="section-desc">Close your eyes, make the biggest wish in your heart, and tap below to blow out the candles!</p>
+        
+        <div class="cake-container" id="cake-area">
+          <div class="flame-glow" id="cake-glow"></div>
+          <div class="cake-graphic">
+            <!-- Candle 1 -->
+            <div class="candle candle-1">
+              <div class="flame" id="flame-1"></div>
+              <div class="wick"></div>
+              <div class="stick"></div>
+            </div>
+            <!-- Candle 2 (Center) -->
+            <div class="candle candle-2">
+              <div class="flame" id="flame-2"></div>
+              <div class="wick"></div>
+              <div class="stick"></div>
+            </div>
+            <!-- Candle 3 -->
+            <div class="candle candle-3">
+              <div class="flame" id="flame-3"></div>
+              <div class="wick"></div>
+              <div class="stick"></div>
+            </div>
+
+            <!-- Cake Layers -->
+            <div class="cake-layer cake-top">
+              <div class="frosting-drops">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="cake-layer cake-middle">
+              <div class="cream-fill"></div>
+            </div>
+            <div class="cake-layer cake-bottom">
+              <div class="plate"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cake-actions">
+          <button id="blow-candle-btn" class="glow-cta-btn">
+            🎂 Blow Candles & Make Wish!
+          </button>
+          <p id="wish-status" class="wish-message"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Surprise Gift Box & Letter Section -->
+    <section class="interactive-section gift-section">
+      <div class="glass-card gift-card">
+        <div class="section-badge">A Special Surprise 🎁</div>
+        <h2>Tap the Gift Box to Open Your Letter</h2>
+        <p class="section-desc">Something straight from the heart is wrapped inside just for you!</p>
+
+        <div class="gift-box-wrapper" id="gift-box-trigger">
+          <div class="gift-box" id="gift-box">
+            <div class="gift-lid">
+              <div class="bow"></div>
+              <div class="ribbon-lid"></div>
+            </div>
+            <div class="gift-body">
+              <div class="ribbon-vertical"></div>
+              <div class="ribbon-horizontal"></div>
+              <div class="gift-sparkles">✨</div>
+            </div>
+          </div>
+          <p class="click-hint">Tap me! 👆</p>
+        </div>
+
+        <!-- Heartfelt Letter that reveals on gift opening -->
+        <div class="letter-reveal-container" id="letter-container">
+          <div class="heart-envelope-letter">
+            <div class="letter-header">
+              <span class="letter-stamp">💌 Dearest Didi</span>
+              <span class="letter-date">Today & Always</span>
+            </div>
+            <div class="letter-body">
+              <p>Happy Birthday to the most caring, supportive, and sweetest sister in the entire universe!</p>
+              <p>Thank you for all the laughter, the gentle guidance, the endless love, and for always being my biggest protector. Having you as my Didi is truly one of life's greatest blessings.</p>
+              <p>May this year shower you with boundless joy, radiant health, unmatched success, and all the dreams you have ever wished for!</p>
+              <p class="sign-off">With all the love and warm hugs in my heart,<br><strong>Forever your biggest fan ❤️</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer-quote">"A sister is a little bit of childhood that can never be lost."</p>
+      <p class="footer-sub">Crafted with lots of ❤️ for Didi on her special day</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
