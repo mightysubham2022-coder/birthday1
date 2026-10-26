@@ -1,16 +1,18 @@
-# Happy Birthday Didi! 🎂✨
+# Happy Birthday Didi! ✨🎂
 
-A minimalist, interactive celebration website created with love for Didi on her special day.
+A minimal, luxurious, and heartfelt birthday celebration website created with love for Didi.
 
-## ✨ Features
-- **Dynamic 5-Photo Memory Frame**: Elegant polaroid album that automatically adapts in size to fit portrait and widescreen landscape photos without cropping.
-- **Interactive Birthday Cake**: Blow out candles with a celebration fanfare and confetti burst.
-- **Surprise Gift Box & Letter**: Tap to unwrap and slide open a heartfelt birthday letter.
-- **Web Audio API Melody**: Minimal music box rendition of the Happy Birthday tune.
-- **Ambient Canvas Sparkles**: Floating bokeh and glowing particles.
+## 🌟 Highlights & Features
+- **Adaptive Memory Album**: Dynamic polaroid frame that smoothly resizes to fit 5 cherished photos (portrait & landscape) with zero cropping.
+- **Interactive Birthday Cake**: Blow out candles with a real wish celebration, fanfare, and confetti showers.
+- **Surprise Gift Box & Letter**: Tap-to-unwrap 3D gift box with an emotional, heartfelt sibling letter.
+- **Synthesized Music Box**: Beautiful rendition of "Happy Birthday" built with the Web Audio API (works completely offline, no external audio files required).
+- **Ambient Visuals**: Custom particle physics canvas with drifting bokeh sparkles and confetti.
 
 ## 🚀 Live on GitHub Pages
-This project can be deployed to GitHub Pages with 1-click:
-1. Go to repository **Settings** > **Pages**.
-2. Under **Build and deployment**, set Source to **Deploy from a branch**.
-3. Select `main` branch and `/ (root)`, then click **Save**.
+To publish this website live for free:
+1. Go to your repository on GitHub: `https://github.com/mightysubham2022-coder/birthday`
+2. Click **Settings** > **Pages** (under Code and automation).
+3. Under **Branch**, select `main` and `/ (root)`, then click **Save**.
+4. Your website will be live in a couple of minutes at:
+   `https://mightysubham2022-coder.github.io/birthday/`
